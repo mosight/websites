@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Register | {{ block.super }} {% endblock %}
+
+{% block headline %} Register for Pycon Survival Guide {% endblock %}
+
+{% block content %}
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Sign Up">
+        </form>
+{% endblock content %}
+
