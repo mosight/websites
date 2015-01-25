@@ -1,0 +1,10 @@
+{% extends "joins/base.html" %}
+
+{% block content %}
+    <h1>Hello, welcome to Runner's Diet!</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}
